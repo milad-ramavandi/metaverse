@@ -51,72 +51,68 @@ const Testimonials = () => {
 
           <div className="relative overflow-hidden space-y-5 mt-10">
             <InfiniteMovingCards direction="left" speed={"slow"}>
-              <div className="flex gap-5 w-max">
-                {testimonialsList?.slice(1, 10).map((item, idx) => (
-                  <article
-                    key={idx}
-                    className="w-[250px] sm:min-w-[300px] sm:max-w-sm p-[2px] bg-gradient-to-r from-slate-400 to-slate-600 overflow-hidden rounded-xl"
-                    role="listitem"
-                    tabIndex={-1}
-                  >
-                    <div className="bg-[#0F0F1F] p-5 w-full h-full rounded-xl">
-                      <p className="text-white mb-6 text-sm leading-relaxed">
-                        &quot;{item.description}&quot;
-                      </p>
-                      <div className="flex items-center gap-3">
-                        <CheckCircle2
-                          aria-hidden="true"
-                          focusable="false"
-                          className="text-[rgb(207,255,17)]"
-                        />
-                        <div className="flex flex-col gap-1 justify-start text-left">
-                          <p
-                            className="font-semibold text-white text-sm line-clamp-1"
-                            title={item?.title}
-                          >
-                            {item.title}
-                          </p>
-                          <p className="text-xs text-gray-400">{item.domain}</p>
-                        </div>
+              {testimonialsList?.slice(1, 10).map((item, idx) => (
+                <article
+                  key={idx}
+                  className="w-[250px] sm:min-w-[300px] sm:max-w-sm p-[2px] bg-gradient-to-r from-slate-400 to-slate-600 overflow-hidden rounded-xl"
+                  role="listitem"
+                  tabIndex={-1}
+                >
+                  <div className="bg-[#0F0F1F] p-5 w-full h-full rounded-xl">
+                    <p className="text-white mb-6 text-sm leading-relaxed">
+                      &quot;{item.description}&quot;
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle2
+                        aria-hidden="true"
+                        focusable="false"
+                        className="text-[rgb(207,255,17)]"
+                      />
+                      <div className="flex flex-col gap-1 justify-start text-left">
+                        <p
+                          className="font-semibold text-white text-sm line-clamp-1"
+                          title={item?.title}
+                        >
+                          {item.title}
+                        </p>
+                        <p className="text-xs text-gray-400">{item.domain}</p>
                       </div>
                     </div>
-                  </article>
-                ))}
-              </div>
+                  </div>
+                </article>
+              ))}
             </InfiniteMovingCards>
             <InfiniteMovingCards direction="right" speed={"slow"}>
-              <div className="flex gap-5 w-max">
-                {testimonialsList?.slice(10).map((item, idx) => (
-                  <article
-                    key={idx}
-                    className="w-[250px] sm:min-w-[300px] sm:max-w-sm p-[2px] bg-gradient-to-r from-slate-400 to-slate-600 overflow-hidden rounded-xl"
-                    role="listitem"
-                    tabIndex={-1}
-                  >
-                    <div className="bg-[#0F0F1F] p-5 w-full h-full rounded-xl">
-                      <p className="text-white mb-6 text-sm leading-relaxed">
-                        &quot;{item.description}&quot;
-                      </p>
-                      <div className="flex items-center gap-3">
-                        <CheckCircle2
-                          aria-hidden="true"
-                          focusable="false"
-                          className="text-[rgb(207,255,17)]"
-                        />
-                        <div className="flex flex-col gap-1 justify-start text-left">
-                          <p
-                            className="font-semibold text-white text-sm line-clamp-1"
-                            title={item?.title}
-                          >
-                            {item.title}
-                          </p>
-                          <p className="text-xs text-gray-400">{item.domain}</p>
-                        </div>
+              {testimonialsList?.slice(10).map((item, idx) => (
+                <article
+                  key={idx}
+                  className="w-[250px] sm:min-w-[300px] sm:max-w-sm p-[2px] bg-gradient-to-r from-slate-400 to-slate-600 overflow-hidden rounded-xl"
+                  role="listitem"
+                  tabIndex={-1}
+                >
+                  <div className="bg-[#0F0F1F] p-5 w-full h-full rounded-xl">
+                    <p className="text-white mb-6 text-sm leading-relaxed">
+                      &quot;{item.description}&quot;
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle2
+                        aria-hidden="true"
+                        focusable="false"
+                        className="text-[rgb(207,255,17)]"
+                      />
+                      <div className="flex flex-col gap-1 justify-start text-left">
+                        <p
+                          className="font-semibold text-white text-sm line-clamp-1"
+                          title={item?.title}
+                        >
+                          {item.title}
+                        </p>
+                        <p className="text-xs text-gray-400">{item.domain}</p>
                       </div>
                     </div>
-                  </article>
-                ))}
-              </div>
+                  </div>
+                </article>
+              ))}
             </InfiniteMovingCards>
           </div>
         </div>

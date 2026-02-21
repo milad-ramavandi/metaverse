@@ -4,63 +4,33 @@ import FaqAccordion from "../fa-accordin";
 const faqs = [
   {
     id: 1,
-    question: "What is DeFi (Decentralized Finance)?",
+    question: "What exactly is the Metaverse?",
     answer:
-      "DeFi stands for Decentralized Finance, a blockchain-based financial system that allows users to access services like lending, borrowing, trading, and payments without the need for traditional banks or intermediaries.",
+      "The Metaverse is a shared digital space where people can interact, shop, learn, and play as virtual avatars.",
   },
   {
     id: 2,
-    question: "How is DeFi different from traditional banking?",
+    question: "Will the Metaverse replace the current Internet?",
     answer:
-      "Unlike traditional banking, which relies on centralized institutions, DeFi operates in a decentralized manner using blockchain and smart contracts. Users have full control over their assets, ensuring transparency, security, and global access.",
+      "Not necessarily. It’s more of an evolution or additional layer on top of the current internet that enhances human interaction.",
   },
   {
     id: 3,
-    question: "What role do smart contracts play in DeFi?",
+    question: "How can I access the Metaverse?",
     answer:
-      "Smart contracts are self-executing codes deployed on blockchains like Ethereum. They automate financial transactions without intermediaries and are fundamental to how DeFi protocols function securely and efficiently.",
+      "You can enter Metaverse platforms using VR headsets, laptops, or even smartphones depending on the platform.",
   },
   {
     id: 4,
-    question: "Is DeFi safe to use?",
+    question: "What are the risks of the Metaverse?",
     answer:
-      "DeFi platforms use advanced encryption and open-source smart contracts, offering strong security. However, risks like coding bugs, hacks, and fraudulent projects exist. Always use reputable platforms and secure wallets.",
+      "As with any new technology, challenges like privacy concerns, digital security, and screen-time addiction exist in the Metaverse.",
   },
   {
     id: 5,
-    question: "How can I invest in DeFi?",
+    question: "Is the Metaverse only for gaming?",
     answer:
-      "Not necessarily. Many Web3 browsers allow you to browse without a wallet, but to interact with dApps or sign blockchain transactions, a wallet is required. Most browsers offer built-in wallets or seamless integration with extensions and hardware wallets.",
-  },
-  {
-    id: 6,
-    question: "Which blockchains support DeFi?",
-    answer:
-      "While Ethereum is the most widely used blockchain for DeFi, other networks like BNB Chain (BSC), Polygon, Avalanche, and Solana also host DeFi applications with faster speeds and lower fees.",
-  },
-  {
-    id: 7,
-    question: "How is interest or yield calculated in DeFi?",
-    answer:
-      "Returns in DeFi are typically displayed as APY (Annual Percentage Yield) or APR (Annual Percentage Rate). Earnings come from activities such as staking, lending, or providing liquidity and are often automatically deposited into your wallet.",
-  },
-  {
-    id: 8,
-    question: "Is using DeFi free?",
-    answer:
-      "Many DeFi services are free to use, but you’ll usually need to pay gas fees for transactions—especially on networks like Ethereum. Alternative blockchains with lower fees are available for cost-efficient usage.",
-  },
-  {
-    id: 9,
-    question: "What is the best wallet for DeFi?",
-    answer:
-      "Popular DeFi-compatible wallets include MetaMask, Trust Wallet, and Coinbase Wallet. These wallets enable users to interact with decentralized apps (dApps) and manage their crypto assets directly.",
-  },
-  {
-    id: 10,
-    question: "Is DeFi the future of global finance?",
-    answer:
-      "DeFi is revolutionizing access to financial services and has the potential to become a key part of the future financial system. It offers financial inclusion, transparency, and reduced reliance on intermediaries.",
+      "No. The Metaverse has broader applications including education, business, digital art, and even psychological therapy.",
   },
 ];
 

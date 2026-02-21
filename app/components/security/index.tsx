@@ -61,22 +61,13 @@ const Security = () => {
       />
       <section className="py-20 text-white">
         <div className="w-full mx-auto px-4 text-center">
-          {/* <div
-            className="inline-flex bg-slate-600 p-[2px] rounded-full"
-          >
-            <div className="bg-[#00071C] rounded-full px-4 py-1">
-              <p className="font-medium text-2xl text-[rgb(207,255,17)]">
-                Security
-              </p>
-            </div>
-          </div> */}
           <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-2">
             <div className="flex items-center justify-center gap-6">
               {/* Left Line */}
               <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
 
               <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
-                Security in Defi
+                Security in the Metaverse
               </h2>
 
               {/* Right Line */}

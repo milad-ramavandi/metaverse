@@ -1,11 +1,7 @@
-import {
-  Banknote,
-  Repeat,
-  Shield,
-  TrendingUp
-} from 'lucide-react';
+import { Banknote, Repeat, Shield, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import Script from "next/script";
+import { HoverBorderGradient } from "../hover-border-gradient";
 
 const useCases = [
   {
@@ -62,14 +58,16 @@ const DefiUseCases = () => {
       <section id="defi-use-cases" className="py-20 px-6">
         <div className="w-full mx-auto">
           <div className="grid lg:grid-cols-2 gap-20">
-            <div className="text-center flex flex-col items-center justify-center order-2">
-              {/* <div className="inline-flex bg-slate-600 p-[2px] rounded-full">
-                <div className="bg-[#00071C] rounded-full px-4 py-1">
-                  <p className="font-medium text-2xl text-[rgb(207,255,17)]">
-                    Features
-                  </p>
-                </div>
-              </div> */}
+            <div className="text-center flex flex-col items-center justify-center order-1 lg:order-2">
+              <HoverBorderGradient
+                containerClassName="inline-flex border-0 p-0.5"
+                className="bg-white/15 backdrop-blur-none flex items-center space-x-2"
+              >
+                <div className="w-3 h-3 rounded-full bg-[rgb(207,255,17)]"></div>
+                <p className="font-medium text-2xl text-[rgb(207,255,17)]">
+                  Features
+                </p>
+              </HoverBorderGradient>
               <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
                 Real-World Use Cases of DeFi
               </h2>
@@ -81,7 +79,7 @@ const DefiUseCases = () => {
                 power:
               </p>
             </div>
-            <div className="relative w-full aspect-[1/1] order-1">
+            <div className="relative w-full aspect-[1/1] order-2 lg:order-1">
               <Image
                 src="/defi-use-cases.png"
                 fill

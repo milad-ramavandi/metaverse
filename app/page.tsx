@@ -6,7 +6,6 @@ import Features from "./components/features";
 import DefiUseCases from "./components/defi-use-cases";
 import WhyDefiMatter from "./components/why-defi-matter";
 import Security from "./components/security";
-import HowToGetStartedWithDeFi from "./components/how-get-start-defi";
 import FaQuestions from "./components/fa-questions";
 import Testimonials from "./components/testimonials";
 
@@ -14,17 +13,10 @@ const HomePage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Decentralized Finance (DeFi) | Learn About the Future of Finance",
-    url: "https://lands.domains/defi",
-    headline:
-      "Decentralized Finance (DeFi) | Learn About the Future of Finance",
+    name: "The Metaverse: A New Dimension of Digital Experience",
+    url: "https://lands.domains/metaverse",
     description:
-      "Explore what DeFi is, its key features, use cases, security, what is Defi matter?, and how to get started with Defi. Learn how decentralized finance is changing the global financial landscape.",
-    image: "https://lands.domains/preview-image.png",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://lands.domains/defi",
-    },
+      "Discover the unique experience of the Metaverse: learn what it is, how it works, and what possibilities it unlocks for the future of humanity. Join the decentralized web revolution with lands.domains.",
     publisher: {
       "@type": "Organization",
       name: "lands.domains",
@@ -46,8 +38,8 @@ const HomePage = () => {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Defi",
-          item: "https://lands.domains/defi",
+          name: "Metaverse",
+          item: "https://lands.domains/metaverse",
         },
       ],
     },
@@ -58,14 +50,13 @@ const HomePage = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="px-4 min-h-screen max-w-[1300px] mx-auto flex flex-col gap-16 md:gap-32">
+      <main className="max-w-[1440px] mx-auto flex flex-col gap-16 md:gap-32 overflow-x-hidden">
         <Hero />
         <WhatIsDefi />
         <Features />
         <DefiUseCases />
         <WhyDefiMatter />
         <Security />
-        <HowToGetStartedWithDeFi />
         <Testimonials/>
         <FaQuestions />
       </main>

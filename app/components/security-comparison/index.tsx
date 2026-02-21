@@ -65,7 +65,7 @@ const SecurityComparison = () => {
               <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
 
               <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
-                 What is the Metaverse?
+                Security in the Metaverse
               </h2>
 
               {/* Right Line */}
