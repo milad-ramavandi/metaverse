@@ -50,7 +50,7 @@ const structuredData = {
   })),
 };
 
-const SecurityComparison = () => {
+const WhatIsDefi = () => {
   return (
     <>
       <Script
@@ -87,4 +87,4 @@ const SecurityComparison = () => {
   );
 };
 
-export default SecurityComparison;
+export default WhatIsDefi;

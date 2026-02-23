@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from "react";
 
 interface GradientTextProps {
@@ -21,7 +22,9 @@ const GradientText = ({
   };
 
   return (
-    <div className={`animated-gradient-text ${className}`}>
+    <div
+      className={`animated-gradient-text ${className}`}
+    >
       {showBorder && (
         <div className="gradient-overlay" style={gradientStyle}></div>
       )}
@@ -30,6 +33,6 @@ const GradientText = ({
       </div>
     </div>
   );
-}
+};
 
-export default GradientText
+export default GradientText;

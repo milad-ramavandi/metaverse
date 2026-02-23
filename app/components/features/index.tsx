@@ -99,13 +99,7 @@ const Features = () => {
             <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
 
             <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
-              <GradientText
-                colors={["#10b981", "#f43f5e", "#06b6d4", "#4079ff"]}
-                animationSpeed={7}
-                showBorder={false}
-              >
-                Key Features of Defi
-              </GradientText>
+              Key Features of Defi
             </h2>
 
             {/* Right Line */}
