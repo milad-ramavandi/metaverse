@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative h-screen">
       <div className="absolute w-full h-full inset-0 z-0 overflow-hidden">
         <Image
-          src={"/metaverse.jpg"}
+          src={"/hero.jpg"}
           fill
           priority
           alt="Futuristic illustration of Web3 browser security featuring blockchain elements, padlock shield, and decentralized network"

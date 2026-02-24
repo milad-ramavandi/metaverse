@@ -2,12 +2,12 @@
 import Script from "next/script";
 import Hero from "./components/hero";
 import Features from "./components/features";
-import DefiUseCases from "./components/defi-use-cases";
 import WhyDefiMatter from "./components/why-defi-matter";
 import Security from "./components/security";
 import FaQuestions from "./components/fa-questions";
 import Testimonials from "./components/testimonials";
 import WhatIsMetaverse from "./components/what-is-metaverse";
+import UseCases from "./components/use-cases";
 
 const HomePage = () => {
   const jsonLd = {
@@ -54,7 +54,7 @@ const HomePage = () => {
         <Hero />
         <WhatIsMetaverse />
         <Features />
-        <DefiUseCases />
+        <UseCases />
         <WhyDefiMatter />
         <Security />
         <Testimonials/>
