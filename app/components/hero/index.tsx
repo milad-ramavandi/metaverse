@@ -33,7 +33,7 @@ const Hero = () => {
               showBorder={false}
               className="!mx-0"
             >
-              The Metaverse:
+              The Metaverse
             </GradientText>
             <br /> <span>A New Dimension of Digital Experience</span>
           </h1>

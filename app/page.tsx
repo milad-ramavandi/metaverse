@@ -1,13 +1,13 @@
 
 import Script from "next/script";
 import Hero from "./components/hero";
-import WhatIsDefi from "./components/what-is-defi";
 import Features from "./components/features";
 import DefiUseCases from "./components/defi-use-cases";
 import WhyDefiMatter from "./components/why-defi-matter";
 import Security from "./components/security";
 import FaQuestions from "./components/fa-questions";
 import Testimonials from "./components/testimonials";
+import WhatIsMetaverse from "./components/what-is-metaverse";
 
 const HomePage = () => {
   const jsonLd = {
@@ -52,7 +52,7 @@ const HomePage = () => {
       />
       <main className="max-w-[1440px] mx-auto flex flex-col gap-16 md:gap-32 overflow-x-hidden">
         <Hero />
-        <WhatIsDefi />
+        <WhatIsMetaverse />
         <Features />
         <DefiUseCases />
         <WhyDefiMatter />
