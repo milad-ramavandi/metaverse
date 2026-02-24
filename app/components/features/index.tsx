@@ -12,84 +12,84 @@ import {
   Unlock,
   Zap,
 } from "lucide-react";
-import Feature from "../feature";
-import GradientText from "../gradient-text";
+import Feature from "./feature";
+
+const features = [
+  {
+    title: "User-Owned Virtual Assets",
+    description:
+      "In the metaverse, users fully own their virtual assets such as avatars, land, and digital items through blockchain-based ownership. No centralized entity can seize or control what truly belongs to you.",
+    icon: <KeyRound />,
+  },
+  {
+    title: "Open & Borderless Access",
+    description:
+      "The metaverse is accessible to anyone, anywhere in the world. Users can enter virtual worlds, experiences, and economies without geographical limitations or traditional gatekeepers.",
+    icon: <Unlock />,
+  },
+  {
+    title: "Smart World Automation",
+    description:
+      "Smart contracts power automated interactions inside the metaverse, from virtual marketplaces to digital events. These systems enable trustless, transparent, and real-time execution of in-world actions.",
+    icon: <Settings />,
+  },
+  {
+    title: "Global Virtual Economy",
+    description:
+      "The metaverse connects users into a shared global economy where digital goods, services, and experiences can be traded seamlessly across platforms and regions.",
+    icon: <Globe />,
+  },
+  {
+    title: "Interconnected Virtual Worlds",
+    description:
+      "Metaverse platforms are designed to be interoperable, allowing users to move identities, assets, and experiences across multiple virtual worlds without friction.",
+    icon: <Link2 />,
+  },
+  {
+    title: "Transparent Digital Interactions",
+    description:
+      "All transactions and interactions within the metaverse are recorded on-chain, ensuring transparency, traceability, and trust across virtual environments.",
+    icon: <Eye />,
+  },
+  {
+    title: "Creator Monetization",
+    description:
+      "The metaverse empowers creators to earn directly from their work by selling virtual assets, experiences, and services without intermediaries taking control or excessive fees.",
+    icon: <BarChart3 />,
+  },
+  {
+    title: "Virtual Commerce Without Middlemen",
+    description:
+      "Users can buy, sell, and trade digital assets directly within the metaverse, eliminating traditional platforms and enabling peer-to-peer virtual commerce.",
+    icon: <Banknote />,
+  },
+  {
+    title: "Digital Asset Tokenization",
+    description:
+      "Virtual land, collectibles, and experiences are tokenized as digital assets, making them tradable, scarce, and verifiable across the metaverse ecosystem.",
+    icon: <Coins />,
+  },
+  {
+    title: "Community-Driven Governance",
+    description:
+      "Metaverse platforms often evolve through community governance, allowing users to vote on upgrades, rules, and future development of shared virtual spaces.",
+    icon: <Gavel />,
+  },
+  {
+    title: "Real-Time Experiences",
+    description:
+      "Unlike traditional platforms, the metaverse enables real-time interactions, instant ownership transfers, and live participation in immersive digital environments.",
+    icon: <Zap />,
+  },
+  {
+    title: "Decentralized & Censorship-Resistant",
+    description:
+      "Built on decentralized infrastructure, the metaverse resists censorship and shutdowns, ensuring freedom of expression and persistent access to virtual worlds.",
+    icon: <ShieldCheck />,
+  },
+];
 
 const Features = () => {
-  const features = [
-    {
-      title: "Non-Custodial Control",
-      description:
-        "DeFi platforms are non-custodial, meaning users retain full control of their funds without relying on centralized institutions. This empowers individuals to manage assets directly via secure Web3 wallets like MetaMask.",
-      icon: <KeyRound />,
-    },
-    {
-      title: "Permissionless Access",
-      description:
-        "Anyone with an internet connection can access DeFi without the need for KYC or approval. This inclusivity democratizes financial services globally, especially in underbanked regions.",
-      icon: <Unlock />,
-    },
-    {
-      title: "Smart Contract Automation",
-      description:
-        "DeFi protocols are powered by smart contracts that automate transactions without intermediaries. These self-executing agreements reduce errors, lower costs, and ensure transparency in financial processes.",
-      icon: <Settings />,
-    },
-    {
-      title: "Global Liquidity Pools",
-      description:
-        "DeFi allows users worldwide to contribute to and access global liquidity pools. These decentralized reserves facilitate instant trading, lending, and borrowing across borders 24/7.",
-      icon: <Globe />,
-    },
-    {
-      title: "Interoperability",
-      description:
-        "Most DeFi platforms are designed to work seamlessly across multiple blockchain networks and dApps. This interoperability enables users to compose financial strategies using various protocols together (a.k.a. “Money Legos”).",
-      icon: <Link2 />,
-    },
-    {
-      title: "Transparent Transactions",
-      description:
-        "All DeFi transactions are recorded on public blockchains like Ethereum, ensuring full transparency. Anyone can verify contract logic, token flows, and platform integrity through block explorers.",
-      icon: <Eye />,
-    },
-    {
-      title: "Yield Farming Opportunities",
-      description:
-        "DeFi enables users to earn passive income through yield farming, where crypto assets are locked in protocols to generate returns. It’s a powerful tool for maximizing capital efficiency.",
-      icon: <BarChart3 />,
-    },
-    {
-      title: "Lending & Borrowing Without Banks",
-      description:
-        "With DeFi, users can lend and borrow crypto assets instantly without involving banks or credit checks. Interest rates are algorithmically set, and collateral is managed via smart contracts.",
-      icon: <Banknote />,
-    },
-    {
-      title: "Tokenization of Assets",
-      description:
-        "DeFi supports the tokenization of real-world assets such as real estate, commodities, or fiat currencies. This makes them divisible, tradable, and accessible globally via blockchain.",
-      icon: <Coins />,
-    },
-    {
-      title: "Governance by Community",
-      description:
-        "Many DeFi protocols are governed by token holders who vote on proposals and updates. This decentralized governance ensures that control and decision-making remain in the hands of the community.",
-      icon: <Gavel />,
-    },
-    {
-      title: "Instant Settlement",
-      description:
-        "Unlike traditional finance with settlement delays, DeFi enables instant transaction execution and finality. Users benefit from faster trades, reduced risk, and real-time liquidity.",
-      icon: <Zap />,
-    },
-    {
-      title: "Censorship Resistance",
-      description:
-        "DeFi platforms operate on decentralized infrastructure that resists censorship and shutdown. Users maintain sovereignty over their funds and access, regardless of geographic or political restrictions.",
-      icon: <ShieldCheck />,
-    },
-  ];
   return (
     <section id="key-features-of-defi" className="py-20 px-6">
       <div className="w-full mx-auto text-center">
@@ -99,7 +99,7 @@ const Features = () => {
             <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
 
             <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
-              Key Features of Defi
+              Key Features of Metaverse
             </h2>
 
             {/* Right Line */}
