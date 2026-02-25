@@ -60,7 +60,7 @@ const UseCases = () => {
           </div>
           <div className="relative w-full aspect-square order-2 lg:order-1">
             <Image
-              src="/use-cases-metaverse.png"
+              src="/images/use-cases-metaverse.png"
               fill
               alt="Illustration of metaverse use cases including Virtual Economy & Digital Commerce, Cross-World Asset Trading, Digital Identity & Security, Creator Monetization & Virtual Income."
               className="object-cover"

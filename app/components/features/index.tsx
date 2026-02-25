@@ -93,18 +93,16 @@ const Features = () => {
   return (
     <section id="key-features-of-defi" className="py-20 px-6">
       <div className="w-full mx-auto text-center">
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-2">
-          <div className="flex items-center justify-center gap-6">
-            {/* Left Line */}
-            <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
+        <div className="flex items-center justify-center gap-6">
+          {/* Left Line */}
+          <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
 
-            <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
-              Key Features of Metaverse
-            </h2>
+          <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
+            Key Features of Metaverse
+          </h2>
 
-            {/* Right Line */}
-            <div className="h-px flex-grow bg-gradient-to-l from-[#11A2E5]  to-transparent " />
-          </div>
+          {/* Right Line */}
+          <div className="h-px flex-grow bg-gradient-to-l from-[#11A2E5]  to-transparent " />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">

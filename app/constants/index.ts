@@ -150,28 +150,28 @@ export const securityFeatures = [
     title: "User Privacy",
     description:
       "Your personal data, identity, and virtual interactions are safeguarded using advanced end-to-end encryption and zero-knowledge proof technologies, ensuring that only you control what information is shared within the metaverse.",
-    imageUrl: "/user-privacy.jpg",
+    imageUrl: "/images/user-privacy.jpg",
     imageAlt: "Privacy",
   },
   {
     title: "Data Protection",
     description:
       "All user activities and assets are stored securely through decentralized and tamper-resistant storage systems, preventing unauthorized access, data leaks, and single points of failure.",
-    imageUrl: "/data-protection.jpg",
+    imageUrl: "/images/data-protection.jpg",
     imageAlt: "Data Protection",
   },
   {
     title: "Digital Identity",
     description:
       "Create, own, and manage your digital identity independently without relying on centralized platforms, giving you full sovereignty over your virtual presence across metaverse environments.",
-    imageUrl: "/digital-identity.jpg",
+    imageUrl: "/images/digital-identity.jpg",
     imageAlt: "Digital Identity",
   },
   {
     title: "AI Threat Detection",
     description:
       "Our AI-powered security engine continuously analyzes behavior patterns in real time to detect fraud, impersonation attempts, and malicious activities before they can impact users or virtual economies.",
-    imageUrl: "/ai-threat-detection.jpg",
+    imageUrl: "/images/ai-threat-detection.jpg",
     imageAlt: "AI Threat Detection",
   },
 ];
