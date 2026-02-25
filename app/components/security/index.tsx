@@ -1,114 +1,79 @@
-import {
-  AlertTriangle,
-  Code2,
-  KeyRound,
-  Lock,
-  Network,
-  ShieldCheck,
-  UserCheck,
-  Wallet,
-} from "lucide-react";
-import Script from "next/script";
+import { KeyRound, Lock, Network, UserCheck } from "lucide-react";
 import Grid from "../grid";
 
 const securityCases = [
   {
-    title: "End-to-End Encryption for Data",
+    title: "End-to-End Encryption for Virtual Data",
     icon: <Lock className="w-8 h-8 text-indigo-600" />,
     description:
-      "All sensitive user data in modern DeFi interfaces is encrypted using end-to-end cryptography, ensuring that no third-party—whether centralized or decentralized—can intercept wallet credentials or session information.",
+      "All sensitive data within metaverse platforms—including identity credentials, communications, and asset interactions—is protected using end-to-end encryption, ensuring that only intended participants can access private information.",
   },
   {
-    title: "Private Key Ownership & Recovery",
+    title: "User-Controlled Digital Identity",
     icon: <KeyRound className="w-8 h-8 text-indigo-600" />,
     description:
-      "DeFi platforms emphasize user ownership of private keys through secure backup systems such as seed phrases, social recovery, or multi-signature authentication, making self-custody both safer and more manageable.",
+      "The metaverse empowers users with full ownership of their digital identities and access keys. Through self-sovereign identity models and secure recovery mechanisms, users maintain control without relying on centralized authorities.",
   },
   {
-    title: "Decentralized Infrastructure Resilience",
+    title: "Decentralized & Resilient Infrastructure",
     icon: <Network className="w-8 h-8 text-indigo-600" />,
     description:
-      "Unlike centralized services, DeFi ecosystems are resistant to single points of failure. Even if one node or service goes offline, users retain access to funds via the blockchain, ensuring uninterrupted financial sovereignty.",
+      "Metaverse ecosystems are built on decentralized networks that eliminate single points of failure. Even if individual services or nodes go offline, user identities, assets, and experiences remain accessible and secure.",
   },
   {
-    title: "KYC-Free & Anonymous Transactions",
+    title: "Privacy-Preserving Participation",
     icon: <UserCheck className="w-8 h-8 text-indigo-600" />,
     description:
-      "Most DeFi platforms eliminate the need for Know Your Customer (KYC) processes, preserving user anonymity and reducing data leaks—while still maintaining transparency through on-chain analytics and public audit trails.",
+      "Modern metaverse platforms enable users to interact, transact, and socialize without exposing unnecessary personal data, reducing the risk of identity theft while maintaining trust through cryptographic verification.",
   },
 ];
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  itemListElement: securityCases.map((item, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    item: {
-      "@type": "Review",
-      author: item.title,
-      reviewBody: item.description,
-    },
-  })),
-};
-
 const Security = () => {
   return (
-    <>
-      <Script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-      <section className="py-20 text-white">
-        <div className="w-full mx-auto px-4 text-center">
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-2">
-            <div className="flex items-center justify-center gap-6">
-              {/* Left Line */}
-              <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
+    <section className="py-20 text-white">
+      <div className="w-full mx-auto px-4 text-center">
+        <div className="flex items-center justify-center gap-6">
+          {/* Left Line */}
+          <div className="h-px flex-grow bg-gradient-to-r from-[#977AED]  to-transparent " />
 
-              <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
-                Security in the Metaverse
-              </h2>
+          <h2 className="text-3xl md:text-4xl font-bold my-6 text-white">
+            Security in the Metaverse
+          </h2>
 
-              {/* Right Line */}
-              <div className="h-px flex-grow bg-gradient-to-l from-[#11A2E5]  to-transparent " />
-            </div>
-          </div>
-
-          <p className="text-lg text-gray-400 mb-12 text-center">
-            Security is a foundational pillar of the DeFi ecosystem. Unlike
-            traditional finance, where centralized institutions control data and
-            access, decentralized finance places users in full control of their
-            assets—making robust security measures essential. From secure wallet
-            integrations and phishing protection to smart contract auditing and
-            end-to-end encryption, DeFi platforms must defend users against
-            evolving threats. Understanding how DeFi protects user funds,
-            private keys, and transaction data is critical for building trust in
-            this permissionless financial infrastructure. Whether you're a
-            seasoned trader or a newcomer, being aware of DeFi security
-            practices empowers you to navigate the decentralized web safely and
-            confidently.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8">
-            {securityCases.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="relative flex gap-5 rounded-2xl p-6 bg-gradient-to-l from-neutral-800 to-neutral-900 transition-transform hover:-translate-y-1 duration-300 overflow-hidden"
-                >
-                  <Grid/>
-                  <div className="relative z-20">{item?.icon}</div>
-                  <div className="text-left relative z-20">
-                    <h3 className="text-xl font-semibold">{item?.title}</h3>
-                    <p className="text-gray-400">{item?.description}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          {/* Right Line */}
+          <div className="h-px flex-grow bg-gradient-to-l from-[#11A2E5]  to-transparent " />
         </div>
-      </section>
-    </>
+
+        <p className="text-lg text-gray-400 mb-12 text-center max-w-5xl mx-auto">
+          Security is a foundational pillar of the metaverse. As virtual worlds
+          become more immersive and interconnected, protecting user identities,
+          digital assets, and personal interactions is more critical than ever.
+          Unlike traditional platforms that rely on centralized control, the
+          metaverse adopts decentralized and privacy-first security models. From
+          encrypted communications and secure digital identities to resilient
+          infrastructure and fraud prevention, metaverse security ensures users
+          can explore, create, and interact in virtual environments with
+          confidence and trust.
+        </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          {securityCases.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="relative flex gap-5 rounded-2xl p-6 bg-gradient-to-l from-neutral-800 to-neutral-900 transition-transform hover:-translate-y-1 duration-300 overflow-hidden"
+              >
+                <Grid />
+                <div className="relative z-20">{item?.icon}</div>
+                <div className="text-left relative z-20">
+                  <h3 className="text-xl font-semibold">{item?.title}</h3>
+                  <p className="text-gray-400">{item?.description}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 };
 
