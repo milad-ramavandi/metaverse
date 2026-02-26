@@ -175,3 +175,36 @@ export const securityFeatures = [
     imageAlt: "AI Threat Detection",
   },
 ];
+
+export const faqs = [
+  {
+    id: 1,
+    question: "What exactly is the Metaverse?",
+    answer:
+      "The Metaverse is a shared digital space where people can interact, shop, learn, and play as virtual avatars.",
+  },
+  {
+    id: 2,
+    question: "Will the Metaverse replace the current Internet?",
+    answer:
+      "Not necessarily. It’s more of an evolution or additional layer on top of the current internet that enhances human interaction.",
+  },
+  {
+    id: 3,
+    question: "How can I access the Metaverse?",
+    answer:
+      "You can enter Metaverse platforms using VR headsets, laptops, or even smartphones depending on the platform.",
+  },
+  {
+    id: 4,
+    question: "What are the risks of the Metaverse?",
+    answer:
+      "As with any new technology, challenges like privacy concerns, digital security, and screen-time addiction exist in the Metaverse.",
+  },
+  {
+    id: 5,
+    question: "Is the Metaverse only for gaming?",
+    answer:
+      "No. The Metaverse has broader applications including education, business, digital art, and even psychological therapy.",
+  },
+];
